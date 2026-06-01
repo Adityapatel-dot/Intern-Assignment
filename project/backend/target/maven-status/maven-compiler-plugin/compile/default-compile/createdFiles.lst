@@ -1,0 +1,17 @@
+com\taskboard\repository\UserRepository.class
+com\taskboard\service\UserService.class
+com\taskboard\service\TaskService.class
+com\taskboard\repository\TaskRepository.class
+com\taskboard\TaskboardApplication.class
+com\taskboard\model\User.class
+com\taskboard\dto\AuthResponse.class
+com\taskboard\dto\LoginRequest.class
+com\taskboard\model\TaskStage.class
+com\taskboard\controller\AuthController.class
+com\taskboard\controller\TaskController.class
+com\taskboard\config\JwtAuthenticationFilter.class
+com\taskboard\config\SecurityConfig.class
+com\taskboard\config\JwtUtil.class
+com\taskboard\model\Task.class
+com\taskboard\dto\RegisterRequest.class
+com\taskboard\dto\TaskRequest.class

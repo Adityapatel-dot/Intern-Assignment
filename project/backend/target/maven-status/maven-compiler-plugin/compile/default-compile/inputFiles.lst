@@ -1,0 +1,17 @@
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\dto\RegisterRequest.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\model\Task.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\controller\TaskController.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\controller\AuthController.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\model\TaskStage.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\service\TaskService.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\dto\AuthResponse.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\dto\LoginRequest.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\repository\UserRepository.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\config\JwtUtil.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\dto\TaskRequest.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\config\JwtAuthenticationFilter.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\config\SecurityConfig.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\model\User.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\service\UserService.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\repository\TaskRepository.java
+C:\Users\uditya\Desktop\CLAUDE-CODE-MINIMAX\project\backend\src\main\java\com\taskboard\TaskboardApplication.java

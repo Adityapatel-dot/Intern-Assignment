@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBoard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="auth-page">
+        <div class="auth-container">
+            <h1>TaskBoard</h1>
+            <p class="auth-subtitle">Kanban-style task management</p>
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="showLogin()">Login</button>
+                <button class="auth-tab" onclick="showRegister()">Register</button>
+            </div>
+            <form id="login-form" class="auth-form" onsubmit="handleLogin(event)">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p id="login-error" class="error-msg"></p>
+            </form>
+            <form id="register-form" class="auth-form hidden" onsubmit="handleRegister(event)">
+                <input type="text" id="register-username" placeholder="Username" required minlength="3">
+                <input type="password" id="register-password" placeholder="Password" required minlength="6">
+                <button type="submit">Register</button>
+                <p id="register-error" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="board-page" class="hidden">
+        <header>
+            <h1>TaskBoard</h1>
+            <div class="header-right">
+                <span id="user-display"></span>
+                <button onclick="handleLogout()">Logout</button>
+            </div>
+        </header>
+        <main>
+            <div class="board-controls">
+                <button onclick="showAddTaskModal()">+ Add Task</button>
+            </div>
+            <div class="board">
+                <div class="column" data-stage="TODO">
+                    <div class="column-header todo">
+                        <h2>To Do</h2>
+                        <span class="count" id="todo-count">0</span>
+                    </div>
+                    <div class="task-list" id="todo-list" ondrop="handleDrop(event)" ondragover="handleDragOver(event)"></div>
+                </div>
+                <div class="column" data-stage="IN_PROGRESS">
+                    <div class="column-header in-progress">
+                        <h2>In Progress</h2>
+                        <span class="count" id="inprogress-count">0</span>
+                    </div>
+                    <div class="task-list" id="inprogress-list" ondrop="handleDrop(event)" ondragover="handleDragOver(event)"></div>
+                </div>
+                <div class="column" data-stage="DONE">
+                    <div class="column-header done">
+                        <h2>Done</h2>
+                        <span class="count" id="done-count">0</span>
+                    </div>
+                    <div class="task-list" id="done-list" ondrop="handleDrop(event)" ondragover="handleDragOver(event)"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="task-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('task-modal')">&times;</span>
+            <h2 id="modal-title">Add Task</h2>
+            <form id="task-form" onsubmit="handleTaskSubmit(event)">
+                <input type="hidden" id="task-id">
+                <input type="text" id="task-title" placeholder="Task title" required>
+                <textarea id="task-description" placeholder="Description (optional)" rows="3"></textarea>
+                <select id="task-stage">
+                    <option value="TODO">To Do</option>
+                    <option value="IN_PROGRESS">In Progress</option>
+                    <option value="DONE">Done</option>
+                </select>
+                <button type="submit">Save</button>
+                <p id="task-error" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
